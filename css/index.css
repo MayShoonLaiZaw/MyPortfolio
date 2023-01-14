@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    color: #333;
+    overflow-x: hidden;
+    font-family: Bahnschrift;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header start */
+.navbar-header{
+    align-self: center;
+}
+/* header end */
+/* aboutme start */
+.aboutme-photo{
+    width: 40%;
+}
+.aboutme-photo figure{
+    line-height: 0;
+    margin:0;
+}
+.aboutme-photo figure img{
+    width: 80%;
+}
+.aboutme-intro {
+    width: 55%;
+}
+.aboutme-intro h3{
+    position: relative;
+}
+.aboutme-intro h3::before{
+    margin-right: 10px;
+    width: 6%;
+    border: 1px solid #000;
+    content: "";
+    left: 0;
+}
+.aboutme-contact p i{
+    font-size: 20px;
+}
+.aboutmesocial-icons{
+    align-self: center;
+}
+.aboutmesocial-icons i{
+    font-size: 20px;
+}
+.aboutmesocial-icons i:hover{
+    color: grey;
+    cursor: pointer;
+}
+/* aboutme end */
+/* category start */
+.category-icon{
+    align-self: center;
+}
+.category-icon i{
+    font-size: 20px;
+}
+/* category end */
+/* myskill start */
+.myskill h2{
+    position: relative;
+}
+.myskill h2:before{
+    content: "";
+    width: 10%;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.skill-activity{
+    align-items: center;
+}
+.skill-progress{
+    width: 48%;
+}
+.skill-display{
+    width: 45%;
+    flex-wrap: wrap;
+}
+.skill-icon i{
+    font-size: 30px;
+}
+.skill-category{
+    width: 43%;
+}
+/* myskill end */
+/* projects start */
+.projects h2{
+    position: relative;
+}
+.projects h2:before{
+    content: "";
+    width: 10%;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.projects-lists{
+    flex-wrap: wrap;
+}
+.projects-photo{
+    width: 28%;
+}
+.projects-photo figure{
+    line-height: 0;
+    margin: 0;
+}
+.projects-photo figure img{
+    width: 100%;
+    /* height: 150px; */
+}
+.projects-photo figure img:hover{
+    cursor: pointer;
+}
+/* projects end */
+/* contact start */
+.contact-map{
+    width: 50%;
+}
+.contact h2{
+    position: relative;
+}
+.contact h2:before{
+    content: "";
+    width: 10%;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.contact-map figure{
+    line-height: 0;
+    margin: 0;
+}
+.contact-social{
+    align-self: center;
+}
+.contact-social p i{
+    font-size: 20px;
+}
+.contact-social p:hover{
+    cursor: pointer;
+}
+/* contact end */
+@media screen and (max-width: 435px) {
+    .skill-category {
+        width: 60%;
+        margin:2% auto !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .projects-lists {
+        width: 100%;
+    }
+    .projects-photo {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:768px) {
+
+    .aboutme{
+        flex-wrap: wrap;
+    }
+    .aboutme-photo{
+        width: 100%;
+        text-align: center !important;
+    }
+    .aboutme-intro{
+        width: 100% !important;
+        margin-top: 10%;
+    }
+
+    .category-parts{
+        flex-wrap: wrap;
+    }
+    .category{
+        margin-bottom: 5%;
+    }
+
+    .skill-activity{
+        flex-wrap: wrap;
+    }
+    .skill-progress{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .skill-display {
+        width: 100%;
+    }
+    .skill-category{
+        margin-left: 5%;
+    }
+    .box-category{
+        flex-wrap: wrap;
+    }
+
+    .projects-lists{
+        flex-wrap: wrap;
+    }
+    .projects-photo {
+        width: 43%;
+    }
+
+    .contact-map{
+        width: 100%;
+    }
+    .contact-map-social{
+        flex-wrap: wrap;
+    }
+    .contact-social{
+        padding-top: 10%;
+        margin: 0 auto;
+        padding-left: 0 !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+    .container, .container-md, .container-sm {
+        max-width: 900px;
+    }
+}
